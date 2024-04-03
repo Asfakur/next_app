@@ -20,6 +20,10 @@ const UploadPage = () => {
             )}
             <CldUploadWidget
                 uploadPreset="xzqqtiqf"
+                options={{
+                    sources: ["local"],
+                    multiple: false,
+                }}
                 onSuccess={(result, widget) => {
                     // console.log(result);
                     if (result.event != "success") return;
